@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Miniature Golf</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Mini Golf</title>
     <style>
-        canvas { border: 1px solid black; }
-        #ui { font-family: Arial, sans-serif; margin: 10px; }
+      body, html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      #gameContainer {
+        width: 100vw;
+        height: 100vh;
+      }
     </style>
-</head>
-<body>
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
-    <div id="ui">
-        <span id="strokes">Strokes: 0</span> | 
-        <span id="hole">Hole: 1</span> | 
-        <span id="score">Total Score: 0</span>
-    </div>
-    <script src="game.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="gameContainer"></div>
+    <!-- 
+      We will rely on Vite to load our TypeScript from `src/main.ts`.
+      If you prefer you can remove this script and rely on the dev server,
+      but let's keep it for direct build references.
+    -->
+    <script type="module" src="./src/main.ts"></script>
+  </body>
 </html>
