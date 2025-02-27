@@ -1,5 +1,5 @@
 {
-  "name": "mini-mini-golf",
+  "name": "mini-golf-game",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,7 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "phaser": "^3.60.0"  // or latest
+    "phaser": "^3.60.0"
   },
   "devDependencies": {
     "typescript": "^4.9.5",
