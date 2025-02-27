@@ -4,9 +4,10 @@ import GolfScene from './scenes/GolfScene';
 
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
-  width: 800,  // or full window, e.g. window.innerWidth
+  width: 800,
   height: 600,
   parent: 'gameContainer',
+  backgroundColor: '#87cefa',  // Light sky blue background
   scene: [GolfScene],
   physics: {
     default: 'arcade',
